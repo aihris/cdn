@@ -5,7 +5,7 @@ function loadTopAds(url) {
     document.head.appendChild(link);
 }
 
-loadTopAds('app.v1.css');
+loadTopAds('https://cdn.jsdelivr.net/gh/aihris/cdn/top-ads/app.v1.css');
 
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
