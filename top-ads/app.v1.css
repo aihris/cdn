@@ -1,0 +1,49 @@
+.floating-top-ads {
+    position: fixed;
+    width: 160px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.349);
+    border: 1px solid #2196F3;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#left-ad {
+    left: 80px;
+    top: 100px;
+}
+
+#right-ad {
+    right: 80px;
+    top: 100px;
+}
+
+.visible-top-ads {
+    opacity: 1;
+}
+
+.close-top-ads {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2196F3;
+    background: radial-gradient(circle, rgb(0, 123, 255) 0%, rgb(12, 14, 19) 100%);
+    margin: 2px auto;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-top-ads::before {
+    content: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path style="fill: rgb(255, 255, 255);" d="M23.71,16.29,15.54,8.12a5,5,0,0,0-7.08,0L.29,16.29a1,1,0,0,0,1.42,1.42L9.88,9.54a3,3,0,0,1,4.24,0l8.17,8.17a1,1,0,0,0,1.42,0A1,1,0,0,0,23.71,16.29Z"/></svg>');
+}
+
+@media (max-width: 768px) {
+    .floating-top-ads {
+        display: none;
+    }
+}
