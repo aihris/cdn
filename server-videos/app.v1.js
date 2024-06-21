@@ -1,19 +1,22 @@
-function getFullUrl(path) {
+function getFullUrlServerVideos(urlPathServerVideos) {
     try {
-        const url = new URL(path);
-        return url.href;
-    } catch (e) {
-        const domain = window.location.origin;
-        return `${domain}/${path}`;
+        const urlServerVideos = new URL(urlPathServerVideos);
+        return urlServerVideos.href;
+    } catch (error) {
+        const domainserverVideos = window.location.origin;
+        const domainWithoutTrailingSlash = domainserverVideos.endsWith('/') ? domainserverVideos.slice(0, -1) : domainserverVideos;
+        return `${domainWithoutTrailingSlash}/${urlPathServerVideos}`;
     }
 }
 
-serverConfig.forEach(config => {
-    if (config.imgServer) {
-        const fullUrl = getFullUrl(config.imgServer);
+serverConfig.forEach(configServerVideos => {
+    if (configServerVideos.imgServer) {
+        const fullUrlServerVideos = getFullUrlServerVideos(configServerVideos.imgServer);
+        console.log(fullUrlServerVideos);
     }
 });
 
+// init app vue
 function loadCSS(url) {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
@@ -21,7 +24,7 @@ function loadCSS(url) {
     document.head.appendChild(link);
 }
 
-loadCSS('app.v1.css');
+loadCSS('https://cdn.jsdelivr.net/gh/aihris/cdn/server-videos/app.v1.css');
 
 function loadScript(url, callback) {
     const script = document.createElement('script');
@@ -30,7 +33,7 @@ function loadScript(url, callback) {
     document.body.appendChild(script);
 }
 
-loadScript('https://cdn.jsdelivr.net/npm/vue@3', function () {
+loadScript('https://cdn.jsdelivr.net/npm/vue@3', function() {
 
     const App = {
         data() {
