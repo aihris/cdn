@@ -1,26 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-    function loadTopAds(url) {
+    function loadTopAds(urlTopAds) {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
-        link.href = url;
+        link.href = urlTopAds;
         document.head.appendChild(link);
     }
 
     loadTopAds('https://cdn.jsdelivr.net/gh/aihris/cdn/top-ads/app.v1.1.css');
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScrollTopAds);
 
-    function handleScroll() {
-        const scrollPosition = window.scrollY;
-        const ads = document.querySelectorAll('.floating-top-ads');
+    function handleScrollTopAds() {
+        const scrollPositionTopAds = window.scrollY;
+        const floatingTopAds = document.querySelectorAll('.floating-top-ads');
 
-        if (scrollPosition > 100) {
-            ads.forEach(ad => {
-                ad.style.opacity = '1';
+        if (scrollPositionTopAds > 100) {
+            floatingTopAds.forEach(ftTopAd => {
+                ftTopAd.style.opacity = '1';
             });
         } else {
-            ads.forEach(ad => {
-                ad.style.opacity = '0';
+            floatingTopAds.forEach(ftTopAd => {
+                ftTopAd.style.opacity = '0';
             });
         }
     }
