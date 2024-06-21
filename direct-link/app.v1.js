@@ -5,7 +5,7 @@ function loadFloatingDirectLink(urlFloatingDirectLink) {
     document.head.appendChild(linkFloatingDirectLink);
 }
 
-loadFloatingDirectLink('app.v1.css');
+loadFloatingDirectLink('https://cdn.jsdelivr.net/gh/aihris/cdn/direct-link/app.v1.css');
 
 function setCookie(name, value, minutes) {
     const d = new Date();
