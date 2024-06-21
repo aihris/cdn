@@ -12,7 +12,7 @@ function getFullUrlServerVideos(urlPathServerVideos) {
 serverConfig.forEach(configServerVideos => {
     if (configServerVideos.imgServer) {
         const fullUrlServerVideos = getFullUrlServerVideos(configServerVideos.imgServer);
-        console.log(fullUrlServerVideos);
+        // console.log(fullUrlServerVideos);
     }
 });
 
