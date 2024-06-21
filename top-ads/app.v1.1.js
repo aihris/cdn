@@ -1,14 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     function loadTopAds(url) {
-        const baseUrlTopAds = window.location.href.split('/').slice(0, -1).join('/');
-        const fullUrlTopAds = `${baseUrlTopAds}/${url}`;
         const link = document.createElement('link');
         link.rel = 'stylesheet';
-        link.href = fullUrlTopAds;
+        link.href = url;
         document.head.appendChild(link);
     }
 
-    loadTopAds('app.v1.css');
+    loadTopAds('https://cdn.jsdelivr.net/gh/aihris/cdn/top-ads/app.v1.1.css');
 
     window.addEventListener('scroll', handleScroll);
 
