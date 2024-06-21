@@ -1,0 +1,33 @@
+#floating-ad-300x250 {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.459);
+    border: solid 1px #2196F3;
+    border-bottom: solid 4px #2196F3;
+    border-radius: 6px;
+    width: 300px;
+    height: 250px;
+    float: right;
+    top: 300px;
+    right: 20px;
+    z-index: 2147483647;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+#floating-ad-300x250.visible-ad-300x250 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#close-btn-300x250 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0;
+    top: -30px;
+    cursor: pointer;
+    background-image: url('https://aihris.github.io/cdn/close.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
