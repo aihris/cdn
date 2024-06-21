@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.head.appendChild(linkCss300x250);
     }
 
-    loadTopAds('app.v1.css');
+    loadTopAds('https://cdn.jsdelivr.net/gh/aihris/cdn/300x250/app.v1.css');
 
     const adFloating300x250 = document.getElementById('floating-ad-300x250');
 
