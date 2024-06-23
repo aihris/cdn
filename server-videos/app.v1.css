@@ -81,6 +81,11 @@
     margin-bottom: 10px;
 }
 
+/* icon */
+.icon-play path {
+    fill: #ffffff;
+}
+
 .btnx {
     display: inline-block;
     padding: 10px 20px;
@@ -92,6 +97,7 @@
     transition: background-color 0.3s ease;
 }
 
+/* Buttons */
 .terabox {
     display: inline-flex;
     align-items: center;
@@ -167,6 +173,32 @@
     text-decoration: none;
 }
 
-.icon-play path {
-    fill: #ffffff;
+.vidhide {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: solid 2px #00ffad;
+    background: radial-gradient(circle, rgb(0 255 144) 0%, rgb(26 35 31) 100%);
+    text-shadow: 2px 2px 4px #037f57;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.pornhub {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: solid 2px #ff9900;
+    background: radial-gradient(circle, rgb(255 159 0) 0%, rgb(61 47 24) 100%);
+    text-shadow: 2px 2px 4px #4f432f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
 }
