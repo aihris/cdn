@@ -202,3 +202,78 @@
     transition: background-color 0.3s, box-shadow 0.3s;
     text-decoration: none;
 }
+
+.filemoon {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: solid 2px #4F71E0;
+    background: radial-gradient(circle, #4F71E0 0%, #1c1f2b 100%);
+    text-shadow: 2px 2px 4px #1a2445;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.streamtape {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: solid 2px #6758ff;
+    background: radial-gradient(circle, #6758ff 0%, #201f31 100%);
+    text-shadow: 2px 2px 4px #29245f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.mp4upload {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: solid 2px #4717F6;
+    background: radial-gradient(circle, #4717F6 0%, #0d0625 100%);
+    text-shadow: 2px 2px 4px #1c0a5f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.mixdrop {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: solid 2px #068af0;
+    background: radial-gradient(circle, #068af0 0%, #102637 100%);
+    text-shadow: 2px 2px 4px #043b65;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.uqload {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: solid 2px #2a5182;
+    background: radial-gradient(circle, #2a5182 0%, #0a0d10 100%);
+    text-shadow: 2px 2px 4px #0d1929;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
