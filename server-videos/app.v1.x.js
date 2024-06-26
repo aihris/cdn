@@ -33,7 +33,7 @@ function loadScript(url, callback) {
     document.body.appendChild(script);
 }
 
-loadScript('https://cdn.jsdelivr.net/npm/vue@3', function() {
+loadScript('https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.30/vue.global.prod.min.js', function() {
 
     const App = {
         data() {
