@@ -1,0 +1,51 @@
+#adBottom {
+    display: none;
+}
+
+@media only screen and (min-width:310px) and (max-width:500px) {
+    #adBottom {
+        display: block;
+        position: fixed;
+        text-align: center;
+        bottom: 0px;
+        width: 100%;
+        z-index: 999;
+        height: responsive !important;
+        background-color: #fff;
+        transition: .4s;
+        right: 0px;
+    }
+
+    .ad_sticky {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 -1px 2px 0 rgba(0, 0, 0, 0.06);
+    }
+
+    .ad-close {
+        position: absolute;
+        top: -24px;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg role='img' width='16px' height='16px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath fill='%23555' d='M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z' class=''%3E%3C/path%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        transition: transform .2s ease-in-out;
+        box-sizing: border-box;
+        border-bottom: none;
+        border-right: none;
+        background-size: cover;
+        border: 1px solid rgba(0, 0, 0, .1);
+        background-color: #fff;
+        border-bottom: none;
+        border-right: 0;
+        border-top-left-radius: 4px;
+        z-index: 10000
+    }
+
+    footer#footer {
+        margin-bottom: 45px;
+    }
+}
